@@ -300,9 +300,6 @@ main {
   .header-section {
     padding: 30px;
   }
-  .text {
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 562px) {
