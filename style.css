@@ -150,7 +150,8 @@ nav {
   color: white;
   margin-right: 30px;
   position: relative;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .nav-link:hover::after {
@@ -406,6 +407,7 @@ main {
   }
   .nav-link {
     margin-right: 10px;
+    font-weight: bold;
   }
 
    main {
