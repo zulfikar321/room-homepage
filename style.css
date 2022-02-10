@@ -188,7 +188,6 @@ nav {
 
 .text {
   color: var(--dark-gray);
-  font-size: clamp(1vw, 16px, 2vw);
 }
 
 .btn-shop {
