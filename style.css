@@ -408,11 +408,10 @@ main {
     margin-right: 10px;
   }
 
-  main {
-    margin-top: 20px;
+   main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 40vh 460px 40vh;
+    grid-template-rows: 40vh max-content 40vh;
   }
   .main-content h3 {
     margin-top: 0px;
