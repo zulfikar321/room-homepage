@@ -68,19 +68,19 @@ h1 {
 }
 
 .img-1 {
-  background-image: url(/images/desktop-image-hero-1.jpg);
+  background-image: url(./images/desktop-image-hero-1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .img-2 {
-  background-image: url(/images/desktop-image-hero-2.jpg);
+  background-image: url(./images/desktop-image-hero-2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .img-3 {
-  background-image: url(/images/desktop-image-hero-3.jpg);
+  background-image: url(./images/desktop-image-hero-3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -282,13 +282,13 @@ main {
 }
 
 .main-img-1 {
-  background-image: url(/images/image-about-dark.jpg);
+  background-image: url(./images/image-about-dark.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .main-img-2 {
-  background-image: url(/images/image-about-light.jpg);
+  background-image: url(./images/image-about-light.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -381,19 +381,19 @@ main {
   }
 
   .img-1 {
-    background-image: url(/images/mobile-image-hero-1.jpg);
+    background-image: url(./images/mobile-image-hero-1.jpg);
     background-size: cover;
     background-position: center;
   }
 
   .img-2 {
-    background-image: url(/images/mobile-image-hero-2.jpg);
+    background-image: url(./images/mobile-image-hero-2.jpg);
     background-size: cover;
     background-position: center;
   }
 
   .img-3 {
-    background-image: url(/images/mobile-image-hero-3.jpg);
+    background-image: url(./images/mobile-image-hero-3.jpg);
     background-size: cover;
     background-position: center;
   }
