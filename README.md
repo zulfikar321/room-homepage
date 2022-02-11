@@ -15,7 +15,7 @@ Your users should be able to:
 -Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Screenshot
-![room](https://github.com/zulfikar321/room-homepage/blob/main/Web%20capture_11-2-2022_01026_zulfikar321.github.io.jpeg?raw=true)
+![room](https://github.com/zulfikar321/room-homepage/blob/main/Web%20capture_11-2-2022_71511_zulfikar321.github.io.jpeg?raw=true)
 
 ### Built with
 
