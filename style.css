@@ -41,13 +41,13 @@ h1 {
 }
 
 .images {
-  -webkit-animation-name: swipe;
+  -webkit-animation-name: fade;
   -webkit-animation-duration: 0.3s;
-  animation-name: swipe;
+  animation-name: fade;
   animation-duration: 0.3s;
 }
 
-@-webkit-keyframes swipe {
+@-webkit-keyframes fade {
   from {
     opacity: 0.4;
   }
@@ -56,7 +56,7 @@ h1 {
   }
 }
 
-@keyframes swipe {
+@keyframes fade {
   from {
     opacity: 0.4;
     width: 0;
@@ -68,19 +68,19 @@ h1 {
 }
 
 .img-1 {
-  background-image: url(./images/desktop-image-hero-1.jpg);
+  background-image: url(/images/desktop-image-hero-1.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .img-2 {
-  background-image: url(./images/desktop-image-hero-2.jpg);
+  background-image: url(/images/desktop-image-hero-2.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .img-3 {
-  background-image: url(./images/desktop-image-hero-3.jpg);
+  background-image: url(/images/desktop-image-hero-3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -154,16 +154,21 @@ nav {
   font-size: 14px;
 }
 
-.nav-link:hover::after {
+.nav-link::after {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 0%;
   height: 2px;
   background-color: white;
   bottom: -10px;
   left: 50%;
   right: 50%;
   transform: translate(-50%, 50%);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 50%;
 }
 
 .header-section {
@@ -190,14 +195,14 @@ nav {
 
 section {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.3s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 0.3s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -206,7 +211,7 @@ section {
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -215,6 +220,7 @@ section {
 
 .text {
   color: var(--dark-gray);
+  line-height: 1.5rem;
   font-size: 14px;
 }
 
@@ -223,6 +229,7 @@ section {
   gap: 40px;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .btn-shop p {
@@ -248,6 +255,7 @@ section {
 
 .btn-wrapper > * {
   padding: 30px;
+  transition: background-color 0.5s;
   /* background-color: var(--very-dark-gray);
   opacity: 0.5; */
 }
@@ -274,13 +282,13 @@ main {
 }
 
 .main-img-1 {
-  background-image: url(./images/image-about-dark.jpg);
+  background-image: url(/images/image-about-dark.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .main-img-2 {
-  background-image: url(./images/image-about-light.jpg);
+  background-image: url(/images/image-about-light.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -373,19 +381,19 @@ main {
   }
 
   .img-1 {
-    background-image: url(./images/mobile-image-hero-1.jpg);
+    background-image: url(/images/mobile-image-hero-1.jpg);
     background-size: cover;
     background-position: center;
   }
 
   .img-2 {
-    background-image: url(./images/mobile-image-hero-2.jpg);
+    background-image: url(/images/mobile-image-hero-2.jpg);
     background-size: cover;
     background-position: center;
   }
 
   .img-3 {
-    background-image: url(./images/mobile-image-hero-3.jpg);
+    background-image: url(/images/mobile-image-hero-3.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -407,10 +415,10 @@ main {
   }
   .nav-link {
     margin-right: 10px;
-    font-weight: bold;
   }
 
-   main {
+  main {
+    /* margin-top: 20px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40vh max-content 40vh;
